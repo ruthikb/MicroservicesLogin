@@ -1,7 +1,6 @@
 package com.microservice.app.controller;
 import com.microservice.app.dto.RegisterDto;
 import com.microservice.app.service.RegisterService;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -24,6 +23,6 @@ public class RegisterController {
         }
         else
             registerService.registerUser(dto);
-        return "login";
+        return "Login";
     }
 }

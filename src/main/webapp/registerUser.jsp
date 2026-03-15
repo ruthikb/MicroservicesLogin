@@ -67,6 +67,14 @@
             <label class="form-label">PhoneNumber</label>
             <input type="number" name="phoneNumber" class="form-control" required>
         </div>
+        <div class="mb-3">
+            <option value="">Select Role</option>
+            <select name="role" class="form-control" required>
+                <option value="">Select Role</option>
+                <option value="user">User</option>
+                <option value="admin">Admin</option>
+            </select>
+        </div>
 
         <div class="mb-3">
             <label class="form-label">Password</label>

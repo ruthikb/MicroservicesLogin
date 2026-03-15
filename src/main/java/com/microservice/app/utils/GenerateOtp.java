@@ -20,7 +20,7 @@ public class GenerateOtp {
     }
 
     public String sendSimpleMessage(String email) {
-SimpleMailMessage message = new SimpleMailMessage();
+        SimpleMailMessage message = new SimpleMailMessage();
         String otp = generateOtp();
         message.setFrom("kruthik693@gmail.com");
         message.setTo(email);

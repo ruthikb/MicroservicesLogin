@@ -1,5 +1,4 @@
 package com.microservice.app.repo.impl;
-
 import com.microservice.app.entity.RegisterEntity;
 import com.microservice.app.repo.RegisterRepo;
 import org.springframework.beans.factory.annotation.Autowired;

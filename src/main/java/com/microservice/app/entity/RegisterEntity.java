@@ -1,5 +1,6 @@
 package com.microservice.app.entity;
 
+import com.microservice.app.dto.enums.CustomerType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -31,6 +32,9 @@ public class RegisterEntity {
     @Pattern(regexp = "^[0-9]{10}$", message = "Invalid phone number")
     @Column(nullable = false, unique = true)
     private String phoneNumber;
+
+    @Enumerated(EnumType.STRING)
+    private CustomerType customerType;
 
     @NotBlank(message = "Password is required")
     @Column(nullable = false)
